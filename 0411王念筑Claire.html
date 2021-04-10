@@ -1,0 +1,633 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>0411自我介紹與目標設定</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="44369da1-8ecd-4c85-a77a-0f81343b253c" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🍊</span></div><h1 class="page-title">0411自我介紹與目標設定</h1></header><div class="page-body"><h2 id="f2cd0d20-7570-4d2b-b4df-348a8c386444" class="">【自我介紹】</h2><ul id="676bbc0f-c4f5-4a9a-8156-8577a5688053" class="bulleted-list"><li>基本資訊：<ul id="63b85d63-2a4a-4630-b854-70b27e0f1884" class="bulleted-list"><li>王念筑</li></ul><ul id="40a9623d-2a71-4b76-a841-1819ba3e9ec0" class="bulleted-list"><li>清大科管 / 數據科學&amp;管理專長</li></ul><ul id="8b509ed6-095e-4fb7-9125-7517b326f7dd" class="bulleted-list"><li>PM &amp; BD intern @UCWBC<ul id="2a8f8623-847d-4152-b477-64887e6df508" class="bulleted-list"><li>PM intern : 釐清業務端需求與IT部門開發人員對接、撰寫產品需求文檔協助溝通</li></ul><ul id="3d8ece4f-65ef-47b1-8921-387c59149404" class="bulleted-list"><li>BD intern : 海外招商、內部商業提案</li></ul></li></ul></li></ul><hr id="a0aa4276-17af-4543-8b48-1c8bfd251296"/><h2 id="caea28b4-90dc-4ff7-9346-d43fea1ae656" class="">【活動經歷&amp;專案】</h2><p id="f908ff63-bda3-40e7-977c-ad8b3c96faf2" class="">
+</p><ul id="d89934e0-8f2f-4261-b540-b09e40b00475" class="bulleted-list"><li>活動經歷：</li></ul><ol id="27123a9d-9d8f-4c88-b028-e75fe7cac0a2" class="numbered-list" start="1"><li><strong>Datathon(資策會舉辦)</strong><ul id="3ba3d870-9b09-4eef-a7e8-ccc68828fe23" class="bulleted-list"><li>活動說明：兩天一夜的數據分析與提案活動，選擇兩組以上企業數據並結合Open data，於兩天中發想與簡報提案、實作提案。</li></ul><ul id="6cf8a795-f6e9-434d-80f5-6486a6f2819d" class="bulleted-list"><li>內容：本組結合企業提供之使用者發票資料、輿情資料、其他Open data，發展一套時事行銷時機建議系統，主要用途為供公司內部行銷團隊使用。以互動式網頁呈現商業提案。</li></ul><ul id="96f8304a-b736-4aa8-ac4e-0d7cdb0d099a" class="bulleted-list"><li>負責內容：應用發想、資料清洗、結合外部資料之分析應用</li></ul></li></ol><ol id="a8bd4ef8-e8d1-485a-8f01-acff9f4a59cc" class="numbered-list" start="2"><li><strong>數據創意提案大賽(資策會舉辦)</strong><ul id="60bea8f4-df5c-4c5b-aa77-7429e72ceddf" class="bulleted-list"><li>活動說明：從企業提供數據出發，結合外部資料，針對出題企業之問題提案商業解決方案或應用產品。</li></ul><ul id="df529ff8-1bf7-46cf-b25d-29a33ba2c03d" class="bulleted-list"><li>內容：參與兩屆，使用數據分別為「使用者健康數據」、「使用者試妝行為數據」。</li></ul><ul id="9dad3522-dad9-442f-8bc5-28cc3e9cc375" class="bulleted-list"><li>負責內容：市場與競爭者分析、產品發想、資料清洗、結合外部資料之分析應用</li></ul><p id="875af317-6a2f-481f-a88c-251652977351" class="">
+</p></li></ol><ul id="b14cc10c-acaa-49f6-b852-6025d8b06770" class="bulleted-list"><li>專案：<ol id="ee4a2564-34b5-4ff5-8aec-9a11aa87c648" class="numbered-list" start="1"><li><strong>Bitcoin作為避險資產之合適性評估 (資料科學課程期末專案)</strong><ul id="c12226b2-907e-44b4-b238-fda5df99cbfa" class="bulleted-list"><li>負責內容：預測模型、資料視覺化</li></ul></li></ol><ol id="167c92a7-f3e5-4675-a435-f04cde0b999f" class="numbered-list" start="2"><li><strong>飯店訂房資訊分析與取消率預測 (Coggle)</strong><ul id="0c368a91-ffe2-4f8d-843e-e171510233eb" class="bulleted-list"><li>負責內容：資料視覺化、提出business insight</li></ul></li></ol><ol id="a751e877-2894-4efa-a144-02dd4d472936" class="numbered-list" start="3"><li><strong>應用情緒分析預測與分析新聞對於股價影響 (文件探勘課程期末專案)</strong><ul id="31a675d3-ac75-426c-b84e-e716ea734422" class="bulleted-list"><li>負責內容：Line Chatbot撰寫、API串接</li></ul></li></ol><ol id="e9086b17-c2c9-4c8b-bf49-c530d1228e9d" class="numbered-list" start="4"><li><strong>電影推薦與識別聊天機器人 (企業導師帶領專案)</strong><ul id="99ce0502-8970-4d2b-a384-02011ea10114" class="bulleted-list"><li>負責內容：Line Chatbot撰寫</li></ul></li></ol><p id="8b451e16-8e03-4f7a-ab1e-cfbfe5ddf6ae" class="">
+</p></li></ul><hr id="66641de7-5258-4b98-ace3-eccf5ee782b8"/><h2 id="e5736b76-9d43-4555-8081-b2628e0b0101" class=""><strong>【可提供的協助 / 需要的協助】</strong></h2><p id="187959c8-5baf-4fe9-8f61-490bd7168b5d" class="">
+</p><ul id="5a9e0577-ecb6-4794-8c9a-ade130650292" class="bulleted-list"><li><strong>I CAN HELP......</strong><ol id="4dfb3ddf-598a-49d1-bda8-faae4063ff0f" class="numbered-list" start="1"><li>數據分析相關提案競賽參賽經驗分享</li></ol><ol id="dabb87b5-6496-45e2-9020-c7d27afcd1eb" class="numbered-list" start="2"><li>Text mining (basic concept)</li></ol><ol id="a7b410b0-4403-4572-8700-975b60eb18ea" class="numbered-list" start="3"><li>以Python撰寫Line Chatbot，呈現服務應用的經驗與技巧分享</li></ol><ol id="7ceba429-9f1e-4e33-b99f-4323ddfa3c47" class="numbered-list" start="4"><li>2B商業開發經驗交流、軟體搭建從0-1經驗交流</li></ol><ol id="b2a6d6e1-9660-42f6-aa7d-fe414e99cdaf" class="numbered-list" start="5"><li>Case interview 讀書會經驗交流</li></ol><p id="df76270a-dec4-4838-a5e2-80224754e30c" class="">
+</p></li></ul><ul id="5e03d951-8d2b-4449-acc4-f61223d298ff" class="bulleted-list"><li><strong>I NEED......</strong><ol id="99b8d9bf-bc59-4b54-a7b8-465eeb0b679b" class="numbered-list" start="1"><li>職涯建議 <ul id="8f7b7f86-7cdd-4ba6-b8ba-5a20984e367c" class="bulleted-list"><li>職位與職涯發展：數據分析/商業分析/數據科學/產品管理</li></ul><ul id="8fc1faad-de99-4f07-b9fc-cb32d0006507" class="bulleted-list"><li>產業選擇：電商、網路旅遊與住宿產業、電信、社交互動軟體、工具程式軟體</li></ul></li></ol><ol id="6d798335-46c9-4a12-989d-e728ab1f0420" class="numbered-list" start="2"><li>履歷建議<ul id="e8657859-e521-4c5f-b7ce-9cde82704851" class="bulleted-list"><li>投遞時間：現在 / 畢業後</li></ul><ul id="eec0c1b0-c393-4a53-ae24-9fe9be7d1bc0" class="bulleted-list"><li>經歷呈現、side project呈現<ul id="ee63b41f-dc85-4019-8977-2d59b948d254" class="bulleted-list"><li>呈現內容、方式</li></ul><ul id="0562d43a-a025-4d06-abac-dee60d432e99" class="bulleted-list"><li>競賽簽訂的保密協定? 公司觀看的重點?</li></ul></li></ul></li></ol></li></ul><p id="128d782e-bb53-48be-9121-1b2d456f7fe1" class="">
+</p><hr id="2f119fcb-c051-4c45-954d-ff8a35d78f21"/><h2 id="c22b17d7-3fd4-405a-81fa-6dbe937dd763" class=""><strong>【目標設定】</strong>：</h2><ul id="e5e44acb-fb33-4672-9293-2284c4e225da" class="bulleted-list"><li>總體時程規劃：明確求職目標(4月) → 做準備(5.6月) → 找工作(7.8月)</li></ul><ul id="e948f10b-c55e-42ea-984f-82fea4522bcb" class="bulleted-list"><li>具體目標設定：<ol id="55eeed9a-40f6-4b5b-95a5-b7267afae41a" class="numbered-list" start="1"><li>四月底前對感興趣的產業做出排序(透過網路查找、跟學長姊請教與其他資源)，收斂出最感興趣的產業。並列出<strong>兩家以上</strong>的具體公司與職位，作為求職目標。</li></ol><ol id="eafdfd16-f1c4-46bd-9eb4-68b6f7232ff0" class="numbered-list" start="2"><li>六月底前完成至少<strong>兩個</strong>應用層面居多的商業分析Side project，著重在使用者數據面向，並透過專案實際應用到SQL、Tableau，並給出business insight。</li></ol><ol id="11028713-5a50-4ab9-8b8c-d8b266c6ee42" class="numbered-list" start="3"><li>六月底前參與<strong>至少三場</strong>Data analyst的面試，累積面試經驗，為畢業後面試做準備。</li></ol><ol id="027826e7-c9f1-4caa-8874-c6370ded19b2" class="numbered-list" start="4"><li>面試前演練過至少30題聚焦在數字敏感度的case</li></ol><ol id="c4222f8f-d34a-4aa5-a426-cc6a8abc44b4" class="numbered-list" start="5"><li>畢業後<strong>兩個月內</strong>(?)進入網路旅遊產業(?)擔任Jr. Data analyst (或透過實習轉正)。工作內容是有機會參與商業決策面向、產出是可以被量化的。</li></ol></li></ul></div></article></body></html>
